@@ -223,4 +223,14 @@ a.btn:hover, a.btn:visited, a.btn:active{
     .packages .package.package-2 {
         float:right;
     }
+    .header .elevator {
+        float:none;
+        max-width: 100%;
+        margin-top:2rem;
+    }
+    .contact p {
+        float:none;
+        max-width: 100%;
+        margin-top:2rem;
+    }
 }
