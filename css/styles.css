@@ -1,0 +1,202 @@
+/* Variables */
+:root {
+    --color-bg-default: white;
+    --color-text-default: black;
+
+    --color-almost-black: #060606;
+    --color-business-time: #FFEDC7;
+    --color-seriously: #C0B292;
+
+    color: var(--color-text-default);
+    background: var(--color-bg-default);
+}
+
+/* Mini reset */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* fonts */
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt,wght.ttf);
+}
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+/* shortcuts */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* rest of the worlds */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+    height: 100%;
+    background-color: black;
+}
+html body {
+    color: var(--color-seriously);
+    font-size: 2rem;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    min-height: 100%;
+    background-color: black;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 72rem;
+    margin:auto;
+}
+
+h1, h2, h3 {
+    color: var(--color-business-time);
+    font-family: Manrope, Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size: 9.6rem;
+}
+h2 {
+    font-size: 7.2rem;
+}
+p {
+     line-height: 125%;
+ }
+a {
+    text-decoration: none;
+    color: var(--color-business-time);
+}
+a:hover, a:active, a:visited {
+    text-decoration: underline;
+    color: var(--color-seriously);
+}
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2.2rem;
+    border: 2px solid var(--color-business-time);
+    background-color: var(--color-business-time);
+    color:black;
+    text-decoration: none;
+    margin: 2rem 0;
+    border-radius: 5px;
+    min-width: 16rem;
+    text-align: center;
+}
+a.btn:hover, a.btn:visited, a.btn:active{
+    text-decoration: none;
+    background-color: black;
+    color: var(--color-business-time);
+}
+
+/* header */
+.header {
+    padding-top:4rem;
+}
+.header h1 {
+    padding: 0;
+    margin:0 0 10rem 0;
+}
+.header h2 {
+    margin-top: -50rem;
+    float:right;
+    max-width: 20rem;
+    z-index: 1;
+}
+.header img {
+    float:left;
+    z-index: 0;
+    margin-bottom: 4rem;
+}
+.header .elevator {
+    float:left;
+    max-width: 30rem;
+    margin-top:-12rem;
+}
+
+/* intro */
+.intro {
+    float:left;
+    margin-top:3rem;
+}
+.intro h3 {
+    text-align: right;
+    margin: 3rem 0 5rem 0;
+    font-size: 3.6rem;
+}
+
+/* packages */
+.packages .package {
+    float: left;
+    max-width: 46%;
+    border:.2rem solid var(--color-seriously);
+    border-radius: .6rem;
+    margin: 4rem 2.4rem 4rem 0;
+    padding:2.8rem;
+}
+.packages .package.package-2 {
+    float:right;
+}
+.packages .package h3 {
+    font-size:1.6rem;
+    text-transform: uppercase;
+}
+.packages .package .price {
+    font-size: 4.6rem;
+    padding: 2rem 0;
+}
+.packages .package .desc {
+    font-size: 1.6rem;
+    padding: 2rem 0;
+}
+
+/* contact */
+.contact h2 {
+    font-size: 4rem;
+    min-width: 100%;
+    padding:2rem 0;
+}
+.contact img {
+    margin-top: 2rem
+}
+.contact p {
+    float: left;
+    max-width: 30rem;
+    margin-top:-3rem;
+}
+/* footer */
+.footer {
+    margin:8rem 0 2rem 0;
+    padding:4rem 0 2rem 0;
+    font-size: 1.6rem;
+}
+.footer a {
+    margin-top:1rem;
+    margin-right: 2rem;
+}
