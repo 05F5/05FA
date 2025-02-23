@@ -124,10 +124,11 @@ a.btn:hover, a.btn:visited, a.btn:active{
     margin:0 0 10rem 0;
 }
 .header h2 {
-    margin-top: -50rem;
+    margin-top: -66rem;
     float:right;
     max-width: 20rem;
     z-index: 1;
+    line-height: 8rem;
 }
 .header img {
     float:left;
@@ -202,7 +203,7 @@ a.btn:hover, a.btn:visited, a.btn:active{
 }
 
 
-@media only screen and (max-width: 80rem) {
+@media only screen and (max-width: 60rem) {
     html {
         font-size: 50%;
     }
@@ -232,5 +233,17 @@ a.btn:hover, a.btn:visited, a.btn:active{
         float:none;
         max-width: 100%;
         margin-top:2rem;
+    }
+}
+
+@media only screen and (min-width: 85rem) {
+    html {
+        font-size: 72.5%;
+    }
+    .container {
+        max-width: 82rem;
+    }
+    .header h2 {
+        margin-top: -74rem;
     }
 }
